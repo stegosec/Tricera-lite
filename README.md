@@ -3,30 +3,44 @@
   <h1>🦕 TriceraAudit Lite</h1>
   <p><em>Auditoría offline de configuraciones Fortinet (.conf)</em></p>
 
-  <img alt="Status" src="https://img.shields.io/badge/status-stable-brightgreen?style=for-the-badge">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge">
+  <!-- Badges -->
+  <p>
+    <img alt="Status" src="https://img.shields.io/badge/status-stable-brightgreen?style=for-the-badge">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge">
+    <img alt="Docker" src="https://img.shields.io/badge/Docker-ready-0db7ed?style=for-the-badge&logo=docker&logoColor=white">
+  </p>
 </div>
 
 ---
 
-## 🚀 ¿Qué es?
+# 🦕 TriceraAudit Lite  
 
-**TriceraAudit Lite** es una herramienta de auditoría rápida para **backups `.conf` de Fortinet**, que te da un **resumen de seguridad en segundos**, sin exponer datos en la nube.
-
----
-
-## ✨ Funciones principales
-
-- 🔎 **Carga un `.conf`** → detecta reglas, políticas y configuraciones inseguras.  
-- 🛡️ **Baseline & PSIRT** → aplica validaciones con estándares básicos y avisos de Fortinet.  
-- ⚡ **Ejecución offline** → todo local, sin enviar datos.  
-- 📊 **UI simple** → interfaz web ligera con candados visibles.  
+**TriceraAudit Lite** es una herramienta ligera de **auditoría offline** para respaldos de configuración **Fortinet (.conf)**.  
+Su propósito es brindar una validación rápida y básica de archivos de configuración, directamente en tu equipo y sin necesidad de exponer datos en la nube.  
 
 ---
 
-## ⚡ Cómo usarlo
+## 📦 Requisitos  
 
-```bash
-git clone https://github.com/stegosec/Tricera-lite.git
-cd Tricera-lite
-docker compose up -d
+- **Docker** y **Docker Compose** instalados.  
+- Archivo de configuración Fortinet (`.conf`) exportado como backup.  
+- Navegador web moderno (Chrome, Edge o Firefox).  
+
+---
+
+## 🚀 Funciones actuales  
+
+- 📂 **Carga de archivos `.conf`** → análisis de configuraciones Fortinet desde backups locales.  
+- 🛡️ **Reglas baseline** → validaciones básicas de configuración (ejemplo: políticas por defecto, servicios abiertos).  
+- 📢 **PSIRT Lite** → muestra avisos públicos de seguridad de Fortinet asociados a la versión detectada.  
+- 🌐 **Interfaz web simple** → subir un archivo y obtener un **resumen de hallazgos** en pantalla.  
+- 💻 **Modo consola** → logs en CLI con detalle de análisis y hallazgos detectados.  
+
+---
+
+## ⚡ Instalación y uso  
+
+1. Clonar el repositorio:  
+   ```bash
+   git clone https://github.com/stegosec/Tricera-lite.git
+   cd Tricera-lite
