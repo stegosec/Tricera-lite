@@ -1,6 +1,5 @@
 <!-- HERO -->
 <div align="center">
-  <img src="../brand_logo.png" width="120" alt="TriceraAudit logo"/><br/>
   <h1>🦕 TriceraAudit Lite</h1>
   <p><em>Auditoría offline de configuraciones Fortinet (.conf)</em></p>
 
